@@ -1,0 +1,10 @@
+==> not using CUDA FPS
+
+args: Namespace(batch_size=32, checkpoint='checkpoints/PointNet-demo-None', epoch=250, learning_rate=0.01, model='PointNet', msg='demo', num_classes=15, num_points=1024, seed=None, smoothing=False, weight_decay=0.0001, workers=4)
+==> Building model..
+Traceback (most recent call last):
+  File "main.py", line 251, in <module>
+    main()
+  File "main.py", line 81, in main
+    net = models.__dict__[args.model](num_classes=args.num_classes)
+KeyError: 'PointNet'
